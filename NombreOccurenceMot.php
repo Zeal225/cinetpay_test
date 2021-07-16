@@ -1,6 +1,6 @@
 <?php
 
-//*********PROBLEME 2***************
+//*********PROBLEME 1***************
 
 //chercher le nombre d'occurence d'un mot dans un tableau
 class NombreOccurenceMot
