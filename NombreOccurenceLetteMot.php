@@ -11,7 +11,7 @@ class NombreOccurenceLetteMot
      */
     public function __construct($mot)
     {
-        $this->mot = $mot;
+        $this->mot = strtolower($mot);
     }
 
     /**
