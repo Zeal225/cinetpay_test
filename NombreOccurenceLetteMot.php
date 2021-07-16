@@ -1,15 +1,22 @@
 <?php
-
-
+//*********PROBLEME 2***************
+//le nombre de lette dans un mot
 class NombreOccurenceLetteMot
 {
     public $mot ;
 
+    /**
+     * NombreOccurenceLetteMot constructor.
+     * @param $mot
+     */
     public function __construct($mot)
     {
         $this->mot = $mot;
     }
 
+    /**
+     * @return array
+     */
     public function compterOccurence()
     {
         $motTableaux =  str_split($this->mot);

@@ -1,5 +1,6 @@
 <?php
 
+//*********PROBLEME 2***************
 
 //chercher le nombre d'occurence d'un mot dans un tableau
 class NombreOccurenceMot
@@ -8,12 +9,20 @@ class NombreOccurenceMot
     public $mot;
     public $nombre = 0;
 
+    /**
+     * NombreOccurenceMot constructor.
+     * @param array $tableauMot
+     * @param $mot
+     */
     public function __construct(array $tableauMot, $mot)
     {
         $this->tableauMots = $tableauMot;
         $this->mot = $mot;
     }
 
+    /**
+     * @return int
+     */
     public function compterOccurence()
     {
         foreach ($this->tableauMots as $tableauMot){
