@@ -4,7 +4,6 @@
 class NombreOccurenceLetteMot
 {
     public $mot ;
-    public $lettre;
 
     public function __construct($mot)
     {
@@ -18,7 +17,7 @@ class NombreOccurenceLetteMot
         foreach($motTableaux as $lettre){
             $tabFinal[] = $lettre . '' . substr_count($this->mot, $lettre);
         }
-        return $tabFinal;
+        return array_unique($tabFinal);
     }
 }
 
